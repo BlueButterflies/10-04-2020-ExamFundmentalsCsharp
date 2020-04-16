@@ -2,9 +2,9 @@
 {
     public class Car
     {
-        public Car(int distance, int fuel)
+        public Car(int mileage, int fuel)
         {
-            this.Mileage = distance;
+            this.Mileage = ileage;
             this.Fuel = fuel;
         }
 

@@ -9,6 +9,8 @@ namespace NeedForSpeedIII
     {
         static void Main(string[] args)
         {
+            //This problem given 90/100 point from on judge.softuni.bg
+
             Dictionary<string, Car> cars = new Dictionary<string, Car>();
 
             int n = int.Parse(Console.ReadLine());
@@ -103,13 +105,13 @@ namespace NeedForSpeedIII
     }
     //public class Car
     //{
-    //    public Car(int distance, int fuel)
+    //    public Car(int mileage, int fuel)
     //    {
-    //        this.Distance = distance;
+    //        this.Mileage = mileage;
     //        this.Fuel = fuel;
     //    }
 
-    //    public int Distance { get; set; }
+    //    public int Mileage { get; set; }
     //    public int Fuel { get; set; }
     //}
 }

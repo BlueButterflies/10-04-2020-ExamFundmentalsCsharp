@@ -10,7 +10,7 @@ namespace MirrorWords
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> mirror = new Dictionary<string, string>();
+            List<string> mirror = new List<string>();
 
             string input = Console.ReadLine();
 
@@ -31,7 +31,9 @@ namespace MirrorWords
 
                     if (wordOne == new string(wordTwoToChar))
                     {
-                        mirror.Add(wordOne, wordTwo);
+                        string result = $"{wordOne} <=> {wordTwo}";
+
+                        mirror.Add(result);
                     }
                     counter++;
                 }
@@ -49,10 +51,9 @@ namespace MirrorWords
             {
                 Console.WriteLine("The mirror words are:");
 
-                foreach (var item in mirror)
-                {
-                    Console.WriteLine(string.Join(",", item.Key + " <=> " + item.Value));
-                }
+                Console.WriteLine(string.Join(", ", mirror));
+
+
             }
             else
             {
