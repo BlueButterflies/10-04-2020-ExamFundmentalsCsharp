@@ -69,7 +69,7 @@ namespace NeedForSpeedIII
                     if (cars[model].Fuel > 75)
                     {
                         cars[model].Fuel = 75;
-                        Console.WriteLine($"{model} refueled with {fuels - cars[model].Fuel} liters");
+                        Console.WriteLine($"{model} refueled with {cars[model].Fuel - fuels} liters");
 
                     }
                     else

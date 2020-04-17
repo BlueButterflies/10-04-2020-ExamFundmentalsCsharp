@@ -4,7 +4,7 @@
     {
         public Car(int mileage, int fuel)
         {
-            this.Mileage = ileage;
+            this.Mileage = mileage;
             this.Fuel = fuel;
         }
 
